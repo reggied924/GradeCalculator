@@ -30,7 +30,7 @@ public class Main {
 				switch(input){
 				
 				case 1: 
-					calculatePoints(); 
+					System.out.println("You chose option 1"); 
 					break;
 					
 				case 2:
@@ -48,19 +48,5 @@ public class Main {
 		}//end of while
 		
 	}//end of printMenu
-	
-	public static void calculatePoints(){
-		
-		System.out.println("How many assignments do you have for this class? ");
-		
-		Scanner scan = new Scanner(System.in); 
-		
-		int numClasses = scan.nextInt(); 
-		
-		for(int i = 0; i < numClasses; i++){
-			
-		}
-		
-	}
 
 }//end of class
