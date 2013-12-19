@@ -12,12 +12,15 @@ public class Main {
 	
 	public static void printMenu(){
 		
-		System.out.println("Welcome!");
+		System.out.println("Welcome to Grade Calculator!");
 		
-		String menu = "What type of grading scheme?\n"
-				+ "1) Point\n"
-				+ "2) Percentage\n"
-				+ "3) Exit\n";
+		String menu =
+				  "1) Enter in Name\n"
+				+ "2) Enter in Classes\n"
+				+ "3) Enter in Assignments\n"
+				+ "4) Print Info\n"
+				+ "5) Exit\n";
+		
 		
 		while(true){
 			
@@ -30,15 +33,27 @@ public class Main {
 				switch(input){
 				
 				case 1: 
-					System.out.println("You chose option 1"); 
+					System.out.println("Enter name: ");
+					Scanner userInput = new Scanner(System.in);
+					String name = userInput.nextLine(); 
+					Student student = new Student(name); 
+					student.printInfo();
 					break;
 					
 				case 2:
-					System.out.println("You chose option 2");
+					System.out.println("How many classes");
 					break;
 					
 				case 3:
+					break; 
+					
+				case 4:
+					//student.printInfo(); 
+					break;
+					
+				case 5:
 					System.exit(0);
+					break; 
 					
 				default:
 					System.out.println("invalid selection"); 

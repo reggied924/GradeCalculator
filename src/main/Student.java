@@ -30,5 +30,9 @@ public class Student {
 	public ArrayList<Class> getClasses(){
 		return this.classes; 
 	}
+	
+	public void printInfo(){
+		System.out.println("Student name: " + this.name);
+	}
 
 }
